@@ -22,14 +22,14 @@ def parse_arguments():
         help="your account did or fully qualified handle, foobar.bsky.social")
     parser.add_argument(
         "-n", "--number-to-show",
-        dest="number_to_show", type=int, default=30,
+        dest="number_to_show", type=int, default=10,
         help="number of results to show in each ranking")
     parser.add_argument(
-        "-l", "--global-follower-threshold",
-        dest="global_follower_threshold", type=int, default=500,
+        "-g", "--global-follower-threshold",
+        dest="global_follower_threshold", type=int, default=200,
         help="only show accounts in the relative ranking that are followed by at least this many accounts")
     parser.add_argument(
-        "-g", "--local-follower-threshold",
+        "-l", "--local-follower-threshold",
         dest="local_follower_threshold", type=int, default=5,
         help="only show accounts in the relative ranking that are followed by at least this many accounts that you follow")
     return parser.parse_args()
