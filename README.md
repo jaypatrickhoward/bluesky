@@ -1,7 +1,7 @@
 # bluesky
-A simple python tool for discovering accounts that are "popular" with the accounts you already follow.
+A simple python tool for discovering accounts that are "popular" with accounts you already follow.
 
-The two generates two rankings:
+The tool generates two rankings:
 1. Top accounts by number of their followers that are accounts you follow.
 2. Top accounts by share of their followers made up of accounts you follow.
 
